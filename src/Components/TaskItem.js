@@ -2,7 +2,7 @@ export default function Task(props) {
   return (
     <div className="card">
       <div className="row align-items-center justify-content-between m-3">
-        <div className="col">
+        <div className="col-auto xs-6">
           <h5
             className="card-title lead"
             style={{
@@ -12,7 +12,7 @@ export default function Task(props) {
             {props.taskName}
           </h5>
         </div>
-        <div className="col">
+        <div className="col-auto xs-6">
           <p
             className="card-text"
             style={{
@@ -22,7 +22,7 @@ export default function Task(props) {
             {props.description}
           </p>
         </div>
-        <div className="col-auto">
+        <div className="col-auto row-xs-12">
           <button
             className="btn btn-warning m-2"
             onClick={() => props.completeTask(props.id)}
